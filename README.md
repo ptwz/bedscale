@@ -10,7 +10,7 @@ The Arduino software depends on the modified HX711 library from the &quot;parall
 
 Python Code
 -----------
-The python code needs some initialization in order to work properly.
+The python code needs some initialization in order to work properly. You will have to tell it the peoples weight is is supposed to log. Everyone not in the people shelve will not be monitored and their weight discarded.
 
 <code>$ python</code>
 
@@ -32,6 +32,6 @@ For running `host_process.py`, redirect its output to a log file.
 
 For analyzing the weight changes over time of the previously initializes household members, run `extract_data.py` like so:
 
-<code>$ python extract_data.py > result.dta<code>
+<code>$ python extract_data.py > result.dta</code>
 
 The result.dta can then be processed using a spreadsheet or gnuplot.
